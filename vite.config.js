@@ -31,7 +31,7 @@ export default defineConfig({
       './layout/**/*.ejs',
       './pages/**/*.ejs',
       './pages/**/*.html',
-      './contents/**/*.html',
+      './contents/**/*.ejs',
     ]),
     ViteEjsPlugin(),
     moveOutputPlugin(),

@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+@import 'vendors/bootstrap-icons';
+
+@import 'utils/variables';
+@import 'utils/helpers';
+
+@import 'base/reset';
+@import 'base/base';
+
 @import 'layout/header';
 @import 'layout/footer';
 
 @import 'pages/index';
+@import 'pages/story';
