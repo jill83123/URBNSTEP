@@ -1,3 +1,7 @@
+@import 'display';
+@import 'spacing';
+@import 'text';
+
 .container {
   max-width: 1320px;
   margin-left: auto;
@@ -30,48 +34,4 @@
   &:disabled {
     opacity: 0.4;
   }
-}
-
-.fs-3\.5 {
-  font-size: 14px;
-}
-
-.fs-5 {
-  font-size: 20px;
-}
-
-.fs-7 {
-  font-size: 28px;
-}
-
-.fs-10 {
-  font-size: 40px;
-}
-
-.text-primary-400 {
-  color: $primary-400;
-}
-
-.text-neutral-600 {
-  color: $neutral-600;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.d-block {
-  display: block;
-}
-
-.mb-1 {
-  margin-bottom: 4px;
-}
-
-.mb-4 {
-  margin-bottom: 16px;
-}
-
-.mb-6 {
-  margin-bottom: 24px;
 }
