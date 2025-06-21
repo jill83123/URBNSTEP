@@ -10,6 +10,12 @@
   color: $danger-300;
 }
 
+.hover\:text-neutral-600 {
+  &:hover {
+    color: $neutral-600;
+  }
+}
+
 .bg-primary-200 {
   background-color: $primary-200;
 }

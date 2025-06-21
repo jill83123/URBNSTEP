@@ -1,5 +1,6 @@
 $font-sizes: (
   '3\\.5': 14px,
+  4: 16px,
   5: 20px,
   6: 24px,
   7: 28px,
@@ -13,6 +14,32 @@ $font-sizes: (
   }
 }
 
+@include tablet() {
+  @each $key, $size in $font-sizes {
+    .md\:fs-#{$key} {
+      font-size: $size;
+    }
+  }
+}
+
+@include mobile() {
+  @each $key, $size in $font-sizes {
+    .xs\:fs-#{$key} {
+      font-size: $size;
+    }
+  }
+}
+
+.fw-medium {
+  font-weight: $weight-medium;
+}
+
 .text-center {
   text-align: center;
+}
+
+@include mobile() {
+  .xs\:text-left {
+    text-align: left;
+  }
 }

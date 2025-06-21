@@ -2,6 +2,10 @@
   display: block;
 }
 
+.d-none {
+  display: none;
+}
+
 .d-flex {
   display: flex;
 }
@@ -34,10 +38,54 @@
   gap: 8px;
 }
 
+.gap-4 {
+  gap: 16px;
+}
+
 .gap-6 {
   gap: 24px;
 }
 
 .gap-9 {
   gap: 36px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+@include tablet() {
+  .md\:flex-col {
+    flex-direction: column;
+  }
+}
+
+@include mobile() {
+  .xs\:d-block {
+    display: block;
+  }
+
+  .xs\:d-none {
+    display: none !important;
+  }
+
+  .xs\:flex-col {
+    flex-direction: column;
+  }
+
+  .xs\:flex-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .xs\:items-start {
+    align-items: flex-start;
+  }
+
+  .xs\:gap-1 {
+    gap: 4px;
+  }
+
+  .xs\:gap-4 {
+    gap: 16px;
+  }
 }

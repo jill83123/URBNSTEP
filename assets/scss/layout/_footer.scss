@@ -2,24 +2,13 @@
   padding: 64px 0;
   background-color: $neutral-100;
 
-  .nav {
+  @include mobile {
+    padding: 32px 0;
+  }
+
+  .nav-content {
     padding-bottom: 24px;
     border-bottom: 1px solid $neutral-300;
     margin-bottom: 32px;
-  }
-
-  .pages {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    font-weight: $weight-medium;
-
-    a {
-      padding: 12px;
-
-      &:hover {
-        color: $neutral-600;
-      }
-    }
   }
 }

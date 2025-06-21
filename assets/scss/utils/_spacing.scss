@@ -1,51 +1,58 @@
-@for $i from 1 through 20 {
-  $step: 4px;
+$min-spacing: 0;
+$max-spacing: 20;
+$spacing-step: 4px;
+$spacing-types: (
+  m: margin,
+  mt: margin-top,
+  mb: margin-bottom,
+  ml: margin-left,
+  mr: margin-right,
+  mx: (
+    margin-left,
+    margin-right,
+  ),
+  my: (
+    margin-top,
+    margin-bottom,
+  ),
 
-  .m-#{$i} {
-    margin: $i * $step;
-  }
-  .mt-#{$i} {
-    margin-top: $i * $step;
-  }
-  .mb-#{$i} {
-    margin-bottom: $i * $step;
-  }
-  .ml-#{$i} {
-    margin-left: $i * $step;
-  }
-  .mr-#{$i} {
-    margin-right: $i * $step;
-  }
-  .mx-#{$i} {
-    margin-left: $i * $step;
-    margin-right: $i * $step;
-  }
-  .my-#{$i} {
-    margin-top: $i * $step;
-    margin-bottom: $i * $step;
-  }
+  p: padding,
+  pt: padding-top,
+  pb: padding-bottom,
+  pl: padding-left,
+  pr: padding-right,
+  px: (
+    padding-left,
+    padding-right,
+  ),
+  py: (
+    padding-top,
+    padding-bottom,
+  ),
+);
 
-  .p-#{$i} {
-    padding: $i * $step;
+@mixin generate-spacing($prefix: '') {
+  @for $i from $min-spacing through $max-spacing {
+    @each $short, $prop in $spacing-types {
+      .#{$prefix}#{$short}-#{$i} {
+        @if type-of($prop) == 'list' {
+          @each $p in $prop {
+            #{$p}: $i * $spacing-step;
+          }
+        } @else {
+          #{$prop}: $i * $spacing-step;
+        }
+      }
+    }
   }
-  .pt-#{$i} {
-    padding-top: $i * $step;
-  }
-  .pb-#{$i} {
-    padding-bottom: $i * $step;
-  }
-  .pl-#{$i} {
-    padding-left: $i * $step;
-  }
-  .pr-#{$i} {
-    padding-right: $i * $step;
-  }
-  .px-#{$i} {
-    padding-left: $i * $step;
-    padding-right: $i * $step;
-  }
-  .py-#{$i} {
-    padding-top: $i * $step;
-    padding-bottom: $i * $step;
-  }
+}
+
+@include generate-spacing();
+
+@include tablet() {
+  @include generate-spacing('md\\:');
+}
+
+@include mobile() {
+  @include generate-spacing('xs\\:');
 }

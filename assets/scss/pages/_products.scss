@@ -1,10 +1,21 @@
 .products-main {
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-bottom: 48px;
+
+  @include mobile {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
 
   .category-menu {
     flex-grow: 1;
     font-weight: $weight-medium;
+
+    @include tablet {
+      display: none;
+    }
 
     li:not(:last-child) {
       margin-bottom: 16px;
@@ -21,19 +32,31 @@
   }
 
   .content {
-    max-width: 83%;
     width: 100%;
+    max-width: 83%;
+
+    @include tablet {
+      max-width: 100%;
+    }
   }
 
   .product-list {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
-
     margin-bottom: 48px;
+
+    @include mobile {
+      gap: 24px 12px;
+      margin-bottom: 32px;
+    }
 
     .card {
       max-width: calc((100% - 48px) / 3);
+
+      @include mobile {
+        max-width: calc((100% - 12px) / 2);
+      }
     }
   }
 }

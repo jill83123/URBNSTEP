@@ -47,3 +47,19 @@
   --btn-hover-bg: #{$neutral-900};
   --btn-hover-border-color: #{$neutral-900};
 }
+
+.btn-sm {
+  padding: 8px 16px;
+}
+
+@include tablet() {
+  .md\:btn-sm {
+    padding: 8px 16px;
+  }
+}
+
+@include mobile() {
+  .xs\:btn-sm {
+    padding: 8px 16px;
+  }
+}

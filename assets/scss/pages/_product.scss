@@ -2,6 +2,11 @@
   padding-top: 64px;
   padding-bottom: 64px;
 
+  @include tablet() {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .showcase {
     max-width: 57.6%;
     display: flex;
@@ -10,6 +15,28 @@
 
     &-item {
       max-width: calc((100% - 8px) / 2);
+    }
+
+    @include tablet() {
+      max-width: 100%;
+      flex-wrap: nowrap;
+      gap: 16px;
+      overflow-x: auto;
+
+      &-item {
+        max-width: 75.5%;
+        flex-shrink: 0;
+      }
+    }
+
+    @include mobile() {
+      max-width: calc(100% + 24px);
+      margin-left: -12px;
+      margin-right: -12px;
+
+      &-item {
+        max-width: 100%;
+      }
     }
   }
 
@@ -80,5 +107,21 @@
 
   .card {
     max-width: calc((100% - 72px) / 4);
+  }
+
+  @include tablet() {
+    gap: 16px;
+    overflow-x: auto;
+
+    .card {
+      max-width: 45.5%;
+      flex-shrink: 0;
+    }
+  }
+
+  @include mobile() {
+    .card {
+      max-width: 85.5%;
+    }
   }
 }

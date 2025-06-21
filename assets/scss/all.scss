@@ -4,6 +4,7 @@
 @import 'vendors/bootstrap-icons';
 
 @import 'utils/variables';
+@import 'utils/mixins';
 @import 'utils/helpers';
 
 @import 'base/reset';
@@ -14,7 +15,6 @@
 @import 'components/pagination';
 @import 'components/button';
 
-@import 'layout/navbar';
 @import 'layout/footer';
 
 @import 'pages/index';
