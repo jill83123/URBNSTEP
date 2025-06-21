@@ -9,8 +9,15 @@
 @import 'base/reset';
 @import 'base/base';
 
+@import 'components/breadcrumb';
+@import 'components/card';
+@import 'components/pagination';
+@import 'components/button';
+
 @import 'layout/navbar';
 @import 'layout/footer';
 
 @import 'pages/index';
+@import 'pages/products';
+@import 'pages/product';
 @import 'pages/story';

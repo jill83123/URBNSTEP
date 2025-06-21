@@ -1,20 +1,51 @@
-.mb-1 {
-  margin-bottom: 4px;
-}
+@for $i from 1 through 20 {
+  $step: 4px;
 
-.mb-4 {
-  margin-bottom: 16px;
-}
+  .m-#{$i} {
+    margin: $i * $step;
+  }
+  .mt-#{$i} {
+    margin-top: $i * $step;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i * $step;
+  }
+  .ml-#{$i} {
+    margin-left: $i * $step;
+  }
+  .mr-#{$i} {
+    margin-right: $i * $step;
+  }
+  .mx-#{$i} {
+    margin-left: $i * $step;
+    margin-right: $i * $step;
+  }
+  .my-#{$i} {
+    margin-top: $i * $step;
+    margin-bottom: $i * $step;
+  }
 
-.mb-6 {
-  margin-bottom: 24px;
-}
-
-.p-3 {
-  padding: 12px;
-}
-
-.py-4 {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  .p-#{$i} {
+    padding: $i * $step;
+  }
+  .pt-#{$i} {
+    padding-top: $i * $step;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i * $step;
+  }
+  .pl-#{$i} {
+    padding-left: $i * $step;
+  }
+  .pr-#{$i} {
+    padding-right: $i * $step;
+  }
+  .px-#{$i} {
+    padding-left: $i * $step;
+    padding-right: $i * $step;
+  }
+  .py-#{$i} {
+    padding-top: $i * $step;
+    padding-bottom: $i * $step;
+  }
 }

@@ -1,29 +1,16 @@
-.fs-3\.5 {
-  font-size: 14px;
-}
+$font-sizes: (
+  '3\\.5': 14px,
+  5: 20px,
+  6: 24px,
+  7: 28px,
+  8: 32px,
+  10: 40px,
+);
 
-.fs-5 {
-  font-size: 20px;
-}
-
-.fs-6 {
-  font-size: 24px;
-}
-
-.fs-7 {
-  font-size: 28px;
-}
-
-.fs-10 {
-  font-size: 40px;
-}
-
-.text-primary-400 {
-  color: $primary-400;
-}
-
-.text-neutral-600 {
-  color: $neutral-600;
+@each $key, $size in $font-sizes {
+  .fs-#{$key} {
+    font-size: $size;
+  }
 }
 
 .text-center {

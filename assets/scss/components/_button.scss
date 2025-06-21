@@ -1,0 +1,49 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 24px;
+  border-radius: $radius-xs;
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-border-color);
+
+  &:hover,
+  &:focus {
+    color: var(--btn-hover-color);
+    background-color: var(--btn-hover-bg);
+    border: 1px solid var(--btn-hover-border-color);
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 3px #2125291a;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.btn-neural-900 {
+  --btn-color: #{$white};
+  --btn-bg: #{$neutral-900};
+  --btn-border-color: #{$neutral-900};
+
+  --btn-hover-color: #{$white};
+  --btn-hover-bg: #{$neutral-700};
+  --btn-hover-border-color: #{$neutral-700};
+}
+
+.btn-outline-neural-900 {
+  --btn-color: #{$neutral-900};
+  --btn-bg: #{transparent};
+  --btn-border-color: #{$neutral-900};
+
+  --btn-hover-color: #{$white};
+  --btn-hover-bg: #{$neutral-900};
+  --btn-hover-border-color: #{$neutral-900};
+}

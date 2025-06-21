@@ -1,0 +1,39 @@
+.products-main {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  .category-menu {
+    flex-grow: 1;
+    font-weight: $weight-medium;
+
+    li:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    a {
+      width: 100%;
+      padding: 12px 0;
+    }
+
+    .active {
+      color: $primary-400;
+    }
+  }
+
+  .content {
+    max-width: 83%;
+    width: 100%;
+  }
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+
+    margin-bottom: 48px;
+
+    .card {
+      max-width: calc((100% - 48px) / 3);
+    }
+  }
+}

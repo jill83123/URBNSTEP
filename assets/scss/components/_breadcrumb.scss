@@ -1,0 +1,20 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  color: $neutral-600;
+  font-weight: $weight-medium;
+
+  .breadcrumb-item {
+    &:not(:first-child)::before {
+      content: '/';
+      color: $neutral-300;
+      font-weight: $weight-bold;
+      margin-left: 12px;
+      padding-right: 12px;
+    }
+  }
+
+  .active {
+    color: $neutral-900;
+  }
+}

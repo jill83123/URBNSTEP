@@ -13,9 +13,26 @@
     <!-- page content -->
     <%- include(content) %>
 
+    <!-- infoBar -->
+    <% var showInfoBar = showInfoBar || false; %>
+    <% if (showInfoBar) { %>
+      <%- include('./layout/infoBar'); -%>
+    <% } %>
+
     <!-- footer -->
     <%- include('./layout/footer'); -%>
 
+    <!-- template -->
+    <template id="productCardTemp">
+      <li class="card">
+        <img src="../assets/images/products/product.png" alt="PLATFORM 404" class="card-img" />
+        <h2 class="title">PLATFORM 404</h2>
+        <p class="price">NT$2,600</p>
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+    </template>
+
+    <!-- javascript -->
     <script type="module" src="../main.js"></script>
   </body>
 </html>
