@@ -4,41 +4,266 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>首頁｜URBNSTEP</title>
-    <script type="module" crossorigin src="/URBNSTEP/assets/main-Wd0I3DXt.js"></script>
-    <link rel="stylesheet" crossorigin href="/URBNSTEP/assets/main-DUKhlulM.css">
+    <script type="module" crossorigin src="/URBNSTEP/assets/main-C5V6pmg7.js"></script>
+    <link rel="stylesheet" crossorigin href="/URBNSTEP/assets/main-CdMhhkNT.css">
   </head>
 
   <body>
     <!-- navbar -->
-    <nav class="container d-flex justify-between items-center py-4 xs:py-3">
-  <div class="d-flex items-center gap-9">
-    <a href="index.html">
-      <img src="/URBNSTEP/assets/logo-RhEl2I3y.svg" alt="logo" />
-    </a>
+    
+    <nav class="d-flex flex-col">
+  <div class="container w-100 d-flex justify-between items-center py-4 xs:py-3">
+    <div class="d-flex items-center gap-9">
+      <a href="index.html">
+        <img src="/URBNSTEP/assets/logo-RhEl2I3y.svg" alt="logo" />
+      </a>
 
-    <ul class="d-flex items-center gap-4 fw-medium xs:d-none">
-      <li>
-        <a href="products.html" class="p-3 hover:text-neutral-600">商品列表</a>
-      </li>
-      <li>
-        <a href="story.html" class="p-3 hover:text-neutral-600">品牌故事</a>
-      </li>
-    </ul>
+      <ul class="d-flex items-center gap-4 fw-medium xs:d-none">
+        <li>
+          <a href="products.html" class="p-3 hover:text-neutral-600">商品列表</a>
+        </li>
+        <li>
+          <a href="story.html" class="p-3 hover:text-neutral-600">品牌故事</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <a href="login.html" class="p-3">
+        <i class="bi bi-person fs-6"></i>
+      </a>
+    </div>
   </div>
 
-  <div>
-    <a href="login.html" class="p-3">
-      <i class="bi bi-person fs-6"></i>
-    </a>
-  </div>
+  
+    <div class="d-none xs:d-block">
+      <ul class="d-flex items-center fw-medium text-center">
+        <li class="flex-grow-1 bg-primary-200">
+          <a href="products.html" class="w-100 p-3">商品列表</a>
+        </li>
+        <li class="flex-grow-1 bg-primary-100">
+          <a href="story.html" class="w-100 p-3">品牌故事</a>
+        </li>
+      </ul>
+    </div>
+  
 </nav>
 
     <!-- page content -->
-    <h1>首頁</h1>
+    <header class="index-banner">
+  <picture>
+    <source media="(max-width: 575px)" srcset="/URBNSTEP/assets/banner-sm-Dqy3Csh0.png" />
+    <img src="/URBNSTEP/assets/banner-DI6JVJ4R.png" alt="URBNSTEP 街頭機能鞋" class="banner-img" />
+  </picture>
+
+  <div class="content container d-flex items-center">
+    <div>
+      <h1 class="title text-white fs-16 mb-4 md:fs-12 md:mb-2">URBNSTEP</h1>
+      <p class="title text-white fs-7 mb-12 md:fs-5 md:mb-8">Your Step, Your Statement</p>
+      <a href="products.html" class="btn btn-primary-300">立即選購</a>
+    </div>
+  </div>
+</header>
+
+<main class="index-main">
+  <section class="section container">
+    <div class="text-center">
+      <p class="title fs-12 mb-3 xs:fs-8 xs:mb-2">New Arrival</p>
+      <h2 class="news-title title">新品上市</h2>
+    </div>
+
+    <ul class="d-flex flex-wrap row-gap-10 column-gap-6 xs:row-gap-6 xs:column-gap-3">
+      <li class="news-card card xs:card-sm">
+        <img src="/URBNSTEP/assets/new-1-DFuFJpu2.png" alt="Monoverse" class="card-img" />
+        <h3 class="title">Monoverse</h3>
+        <p class="price">NT$3,600</p>
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+      <li class="news-card card xs:card-sm">
+        <img src="/URBNSTEP/assets/new-2-BCvgVdcV.png" alt="PLATFORM 404" class="card-img" />
+        <h3 class="title">PLATFORM 404</h3>
+        <p class="price">NT$2,600</p>
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+      <li class="news-card card xs:card-sm">
+        <img src="/URBNSTEP/assets/new-3-DlHP5xvf.png" alt="URBN Force" class="card-img" />
+        <h3 class="title">URBN Force</h3>
+        <p class="price">NT$3,200</p>
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+      <li class="news-card card xs:card-sm">
+        <img src="/URBNSTEP/assets/new-4-1hP52Cz7.png" alt="Mode90" class="card-img" />
+        <h3 class="title">Mode90</h3>
+        <p class="price">NT$4,000</p>
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section container">
+    <h2 class="title">熱銷補貨</h2>
+
+    <ul class="d-flex gap-6 md:gap-4 overflow-x-auto">
+      <li class="hots-card position-relative">
+        <p class="badge">人氣 No.1</p>
+        <img src="/URBNSTEP/assets/product-3-AxvEbKOW.png" alt="Melty Kiss" class="card-img" />
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+      <li class="hots-card position-relative">
+        <p class="badge">人氣 No.1</p>
+        <img src="/URBNSTEP/assets/product-ByIiOSCa.png" alt="Platform 404" class="card-img" />
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+      <li class="hots-card position-relative">
+        <p class="badge">人氣 No.1</p>
+        <img src="/URBNSTEP/assets/product-6-D5PaxBWx.png" alt="R:UNER" class="card-img" />
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+      <li class="hots-card position-relative">
+        <p class="badge">人氣 No.1</p>
+        <img src="/URBNSTEP/assets/product-4-CqyUCYzf.png" alt="BOOMBLOK" class="card-img" />
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="co-branded d-flex justify-center items-center position-relative my-12 xs:my-6">
+    <picture>
+      <source media="(max-width: 575px)" srcset="/URBNSTEP/assets/banner-co-branded-sm-DH0ZeoOT.png" />
+      <img src="/URBNSTEP/assets/banner-co-branded-ZiuKnLXx.png" class="bg-img" />
+    </picture>
+
+    <div class="content">
+      <div class="position-relative text-center mb-12 xs:mb-8">
+        <h2
+          class="title d-flex justify-center items-center gap-6 text-white fs-12 mb-4 md:fs-10 xs:flex-col xs:gap-2 xs:fs-8"
+        >
+          <span>URBNSTEP</span><span class="text-primary-300 fs-10 md:fs-9 xs:fs-7">x</span
+          ><span>Kevin Chen</span>
+        </h2>
+
+        <h3 class="title text-white mb-8 fs-8 md:fs-7 xs:fs-5 xs:mb-6">跨界聯名，限量發售</h3>
+
+        <p class="text-neutral-500 fs-5 md:fs-4">
+          <span class="xs:d-block xs:mb-1">新銳漫畫家 Kevin Chen 親自操刀設計</span
+          ><span class="xs:d-none">，</span><span class="xs:d-block">街頭能量全面引爆！</span>
+        </p>
+
+        <img src="data:image/svg+xml,%3csvg%20width='66'%20height='66'%20viewBox='0%200%2066%2066'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20filter='url(%23filter0_f_12008_13625)'%3e%3cpath%20d='M26.7724%2013.532L25.3662%2027.4297C25.3511%2027.5787%2025.2296%2027.6983%2025.0729%2027.7183L13.7243%2029.1696C13.4035%2029.2106%2013.3186%2029.6123%2013.5981%2029.7669L23.5412%2035.2677C23.6928%2035.3515%2023.7521%2035.5308%2023.6782%2035.6815L17.6019%2048.066C17.4639%2048.3473%2017.784%2048.6324%2018.0723%2048.4855L29.7974%2042.4996C29.9665%2042.4133%2030.1776%2042.4765%2030.2635%2042.6391L35.565%2052.6727C35.7153%2052.9572%2036.1639%2052.8854%2036.2071%2052.57L37.9056%2040.1498C37.924%2040.0153%2038.0294%2039.9061%2038.1694%2039.8767L52.4479%2036.874C52.7447%2036.8116%2052.8128%2036.4403%2052.5558%2036.287L41.0465%2029.424C40.9182%2029.3475%2040.8589%2029.1999%2040.901%2029.062L44.6436%2016.8139C44.7332%2016.5208%2044.3818%2016.285%2044.119%2016.462L33.9835%2023.2923C33.8208%2023.4019%2033.5938%2023.3561%2033.4926%2023.1932L27.4047%2013.3994C27.2373%2013.1302%2026.8038%2013.2212%2026.7724%2013.532Z'%20stroke='%23D4FF00'%20stroke-width='3'/%3e%3c/g%3e%3cg%20filter='url(%23filter1_f_12008_13625)'%3e%3cpath%20d='M26.7724%2013.532L25.3662%2027.4297C25.3511%2027.5787%2025.2296%2027.6983%2025.0729%2027.7183L13.7243%2029.1696C13.4035%2029.2106%2013.3186%2029.6123%2013.5981%2029.7669L23.5412%2035.2677C23.6928%2035.3515%2023.7521%2035.5308%2023.6782%2035.6815L17.6019%2048.066C17.4639%2048.3473%2017.784%2048.6324%2018.0723%2048.4855L29.7974%2042.4996C29.9665%2042.4133%2030.1776%2042.4765%2030.2635%2042.6391L35.565%2052.6727C35.7153%2052.9572%2036.1639%2052.8854%2036.2071%2052.57L37.9056%2040.1498C37.924%2040.0153%2038.0294%2039.9061%2038.1694%2039.8767L52.4479%2036.874C52.7447%2036.8116%2052.8128%2036.4403%2052.5558%2036.287L41.0465%2029.424C40.9182%2029.3475%2040.8589%2029.1999%2040.901%2029.062L44.6436%2016.8139C44.7332%2016.5208%2044.3818%2016.285%2044.119%2016.462L33.9835%2023.2923C33.8208%2023.4019%2033.5938%2023.3561%2033.4926%2023.1932L27.4047%2013.3994C27.2373%2013.1302%2026.8038%2013.2212%2026.7724%2013.532Z'%20stroke='%23D4FF00'%20stroke-width='3'/%3e%3c/g%3e%3cpath%20d='M26.7724%2013.532L25.3662%2027.4297C25.3511%2027.5787%2025.2296%2027.6983%2025.0729%2027.7183L13.7243%2029.1696C13.4035%2029.2106%2013.3186%2029.6123%2013.5981%2029.7669L23.5412%2035.2677C23.6928%2035.3515%2023.7521%2035.5308%2023.6782%2035.6815L17.6019%2048.066C17.4639%2048.3473%2017.784%2048.6324%2018.0723%2048.4855L29.7974%2042.4996C29.9665%2042.4133%2030.1776%2042.4765%2030.2635%2042.6391L35.565%2052.6727C35.7153%2052.9572%2036.1639%2052.8854%2036.2071%2052.57L37.9056%2040.1498C37.924%2040.0153%2038.0294%2039.9061%2038.1694%2039.8767L52.4479%2036.874C52.7447%2036.8116%2052.8128%2036.4403%2052.5558%2036.287L41.0465%2029.424C40.9182%2029.3475%2040.8589%2029.1999%2040.901%2029.062L44.6436%2016.8139C44.7332%2016.5208%2044.3818%2016.285%2044.119%2016.462L33.9835%2023.2923C33.8208%2023.4019%2033.5938%2023.3561%2033.4926%2023.1932L27.4047%2013.3994C27.2373%2013.1302%2026.8038%2013.2212%2026.7724%2013.532Z'%20stroke='%23D4FF00'%20stroke-width='2'/%3e%3cdefs%3e%3cfilter%20id='filter0_f_12008_13625'%20x='0.918457'%20y='0.741211'%20width='64.3026'%20height='64.6084'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='5.5'%20result='effect1_foregroundBlur_12008_13625'/%3e%3c/filter%3e%3cfilter%20id='filter1_f_12008_13625'%20x='0.918457'%20y='0.741211'%20width='64.3026'%20height='64.6084'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='5.5'%20result='effect1_foregroundBlur_12008_13625'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" class="star" />
+        <img src="data:image/svg+xml,%3csvg%20width='107'%20height='101'%20viewBox='0%200%20107%20101'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M56.5206%2021.4447C66.431%2025.0469%2076.1812%2028.9198%2085.9278%2032.9321'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M41.3405%2039.2673C50.5562%2046.8512%2058.3487%2055.8527%2066.727%2064.2858'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M21.4381%2050.6704C25.211%2059.9189%2028.0816%2069.8349%2028.5456%2079.8152'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cg%20filter='url(%23filter0_f_12008_13631)'%3e%3cpath%20d='M56.5206%2021.4447C66.431%2025.0469%2076.1812%2028.9198%2085.9278%2032.9321'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M41.3405%2039.2673C50.5562%2046.8512%2058.3487%2055.8527%2066.727%2064.2858'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M21.4381%2050.6704C25.211%2059.9189%2028.0816%2069.8349%2028.5456%2079.8152'%20stroke='%23D2FF01'%20stroke-width='2.93433'%20stroke-miterlimit='1.5'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cfilter%20id='filter0_f_12008_13631'%20x='0.970093'%20y='0.977539'%20width='105.426'%20height='99.3047'%20filterUnits='userSpaceOnUse'%20color-interpolation-filters='sRGB'%3e%3cfeFlood%20flood-opacity='0'%20result='BackgroundImageFix'/%3e%3cfeBlend%20mode='normal'%20in='SourceGraphic'%20in2='BackgroundImageFix'%20result='shape'/%3e%3cfeGaussianBlur%20stdDeviation='9.5'%20result='effect1_foregroundBlur_12008_13631'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e" class="sparkle" />
+      </div>
+
+      <a href="products.html" class="btn btn-primary-300 mx-auto">立即搶購</a>
+    </div>
+  </section>
+
+  <section class="section container">
+    <h2 class="title">依系列選購</h2>
+
+    <ul class="d-flex flex-wrap gap-6 xs:gap-3">
+      <li class="series-card position-relative d-flex justify-center items-center">
+        <img
+          src="/URBNSTEP/assets/product-6-D5PaxBWx.png"
+          alt="URBN RUNNER 慢跑系列"
+          class="w-100"
+        />
+        <h3 class="position-absolute title text-center text-white">
+          <span class="en d-block mb-2">URBN RUNNER</span
+          ><span class="d-block fs-6 xs:fs-4">慢跑系列</span>
+        </h3>
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+      <li class="series-card position-relative d-flex justify-center items-center">
+        <img src="/URBNSTEP/assets/product-ByIiOSCa.png" alt="STREETMODE 滑板系列" class="w-100" />
+        <h3 class="position-absolute title text-center text-white">
+          <span class="en d-block mb-2">STREETMODE</span
+          ><span class="d-block fs-6 xs:fs-4">滑板系列</span>
+        </h3>
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+      <li class="series-card position-relative d-flex justify-center items-center">
+        <img
+          src="/URBNSTEP/assets/product-9-DL5QGtW6.png"
+          alt="CHUNK DISTRICT 厚底系列"
+          class="w-100"
+        />
+        <h3 class="position-absolute title text-center text-white">
+          <span class="en d-block mb-2">CHUNK DISTRICT</span
+          ><span class="d-block fs-6 xs:fs-4">厚底系列</span>
+        </h3>
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+      <li class="series-card position-relative d-flex justify-center items-center">
+        <img
+          src="/URBNSTEP/assets/product-1-BSd-Oeai.png"
+          alt="COLLAB ZONE 聯名企劃"
+          class="w-100"
+        />
+        <h3 class="position-absolute title text-center text-white">
+          <span class="en d-block mb-2">COLLAB ZONE</span
+          ><span class="d-block fs-6 xs:fs-4">聯名企劃</span>
+        </h3>
+        <a href="product.html" class="stretched-link"></a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section container">
+    <h2 class="title">穿搭靈感</h2>
+
+    <ul class="inspiration-board">
+      <li class="inspiration-item">
+        <img src="/URBNSTEP/assets/inspiration-1-DfKNOocz.png" alt="URBNSTEP 機能鞋穿搭" />
+      </li>
+      <li class="inspiration-item">
+        <img src="/URBNSTEP/assets/inspiration-2-BDjDmVQx.png" alt="URBNSTEP 機能鞋穿搭" />
+      </li>
+      <li class="inspiration-item md:large-item">
+        <img src="/URBNSTEP/assets/inspiration-4-CXnBlVsw.png" alt="URBNSTEP 機能鞋穿搭" />
+      </li>
+      <li class="inspiration-item">
+        <img src="/URBNSTEP/assets/inspiration-5-DqqQzPWa.png" alt="URBNSTEP 機能鞋穿搭" />
+      </li>
+      <li class="inspiration-item large-item">
+        <img src="/URBNSTEP/assets/inspiration-10-BVOZ4J4I.png" alt="URBNSTEP 機能鞋穿搭" />
+      </li>
+      <li class="inspiration-item large-item md:large-item">
+        <img src="/URBNSTEP/assets/inspiration-3-DIOw8vX3.png" alt="URBNSTEP 機能鞋穿搭" />
+      </li>
+      <li class="inspiration-item">
+        <img src="/URBNSTEP/assets/inspiration-6-Dk9lgMEe.png" alt="URBNSTEP 機能鞋穿搭" />
+      </li>
+      <li class="inspiration-item">
+        <img src="/URBNSTEP/assets/inspiration-7-ImmAd34h.png" alt="URBNSTEP 機能鞋穿搭" />
+      </li>
+      <li class="inspiration-item">
+        <img src="/URBNSTEP/assets/inspiration-8-Ann8D3WO.png" alt="URBNSTEP 機能鞋穿搭" />
+      </li>
+      <li class="inspiration-item">
+        <img src="/URBNSTEP/assets/inspiration-9-PBbdk4I8.png" alt="URBNSTEP 機能鞋穿搭" />
+      </li>
+      <li class="md:d-none xs:d-block">
+        <img src="/URBNSTEP/assets/inspiration-11-DfL9ObnV.png" alt="URBNSTEP 機能鞋穿搭" />
+      </li>
+      <li class="md:d-none xs:d-block">
+        <img src="/URBNSTEP/assets/inspiration-12-DuuNx5Rt.png" alt="URBNSTEP 機能鞋穿搭" />
+      </li>
+    </ul>
+  </section>
+</main>
 
 
     <!-- infoBar -->
     
+    
+      <section class="bg-primary-200 py-6">
+  <div class="container">
+    <div class="d-flex justify-center items-center gap-6 xs:gap-4">
+      <h2 class="title fs-6 xs:fs-5">加入會員取得 9 折優惠</h2>
+      <a href="signup.html" class="btn btn-neural-900 xs:btn-sm">馬上註冊</a>
+    </div>
+  </div>
+</section>
     
 
     <!-- footer -->
