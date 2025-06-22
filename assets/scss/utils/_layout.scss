@@ -1,0 +1,67 @@
+$layout-utils: (
+  d-block: (
+    display: block,
+  ),
+  d-none: (
+    display: none,
+  ),
+  d-flex: (
+    display: flex,
+  ),
+  flex-col: (
+    flex-direction: column,
+  ),
+  flex-reverse: (
+    flex-direction: row-reverse,
+  ),
+  flex-wrap: (
+    flex-wrap: wrap,
+  ),
+  flex-grow-1: (
+    flex-grow: 1,
+  ),
+  items-start: (
+    align-items: flex-start,
+  ),
+  items-center: (
+    align-items: center,
+  ),
+  justify-center: (
+    justify-content: center,
+  ),
+  justify-between: (
+    justify-content: space-between,
+  ),
+  w-100: (
+    width: 100%,
+  ),
+  position-relative: (
+    position: relative,
+  ),
+  position-absolute: (
+    position: absolute,
+  ),
+  overflow-x-auto: (
+    overflow-x: auto,
+  ),
+);
+
+@mixin generate-utils($utils-map, $prefix: '') {
+  @each $class, $rules in $utils-map {
+    .#{$prefix}#{$class} {
+      @each $prop, $value in $rules {
+        #{$prop}: #{$value};
+      }
+    }
+  }
+}
+
+@include generate-utils($layout-utils);
+
+@include tablet() {
+  @include generate-utils($layout-utils, 'md\\:');
+}
+
+@include mobile() {
+  @include generate-utils($layout-utils, 'xs\\:');
+}

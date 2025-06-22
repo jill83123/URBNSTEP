@@ -1,1 +1,237 @@
+.index-banner {
+  position: relative;
 
+  .banner-img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+
+    @include tablet() {
+      height: 640px;
+    }
+
+    @include mobile() {
+      height: 480px;
+    }
+  }
+
+  .content {
+    position: absolute;
+    inset: 0;
+    max-width: 1568px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    @include tablet() {
+      max-width: 878px;
+    }
+  }
+}
+
+.index-main {
+  margin-bottom: 48px;
+
+  @include mobile() {
+    margin-bottom: 24px;
+  }
+
+  .section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    @include mobile() {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    h2.title {
+      font-size: 32px;
+      margin-bottom: 16px;
+
+      @include mobile() {
+        font-size: 24px;
+      }
+    }
+
+    h2.news-title {
+      margin-bottom: 32px;
+
+      @include mobile() {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .news-card {
+    max-width: calc((100% - 24px) / 2);
+
+    @include mobile() {
+      max-width: calc((100% - 12px) / 2);
+    }
+
+    .title {
+      font-size: 20px;
+
+      @include mobile() {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .hots-card {
+    max-width: calc((100% - 72px) / 4);
+
+    @include tablet() {
+      flex-shrink: 0;
+      max-width: 45.5%;
+    }
+
+    @include mobile() {
+      max-width: 85.5%;
+    }
+
+    &:hover {
+      .card-img {
+        opacity: 0.7;
+      }
+    }
+
+    .card-img {
+      transition: opacity 0.3s ease;
+    }
+
+    .badge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      padding: 8px 12px;
+      color: $primary-400;
+      font-weight: $weight-medium;
+      background-color: $primary-100;
+    }
+  }
+
+  .co-branded {
+    height: 470px;
+    overflow: hidden;
+
+    @include mobile() {
+      height: 450px;
+    }
+
+    .bg-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content {
+      position: absolute;
+
+      @include mobile() {
+        max-width: 351px;
+      }
+    }
+
+    .star {
+      position: absolute;
+      top: -40px;
+      left: -90px;
+
+      @include tablet() {
+        left: -82px;
+      }
+
+      @include mobile() {
+        left: -74px;
+      }
+    }
+
+    .sparkle {
+      position: absolute;
+      right: -54px;
+      bottom: -86px;
+
+      @include mobile() {
+        right: -88px;
+        bottom: -62px;
+      }
+    }
+  }
+
+  .series-card {
+    max-width: calc((100% - 72px) / 4);
+
+    @include tablet() {
+      max-width: calc((100% - 24px) / 2);
+    }
+
+    @include mobile() {
+      max-width: calc((100% - 12px) / 2);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: #000;
+      opacity: 0.4;
+    }
+
+    &:hover {
+      .en {
+        color: $primary-300;
+      }
+    }
+
+    .en {
+      font-size: clamp(22px, 0.975rem + 0.6459vw, 28px);
+      transition: color 0.3s ease;
+
+      @include tablet() {
+        font-size: clamp(16px, 0.5434rem + 1.9481vw, 28px);
+      }
+    }
+  }
+
+  .inspiration-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+
+    .large-item {
+      grid-column: span 2;
+      grid-row: span 2;
+
+      @include tablet() {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+    }
+
+    @include tablet() {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+
+      .md\:large-item {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+    }
+
+    @include mobile() {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+
+      .inspiration-item {
+        flex-shrink: 0;
+        max-width: 85.5%;
+      }
+    }
+  }
+}

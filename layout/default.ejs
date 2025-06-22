@@ -8,7 +8,8 @@
 
   <body>
     <!-- navbar -->
-    <%- include('./layout/navbar'); -%>
+    <% var showSmallPageLink = showSmallPageLink || false; %>
+    <%- include('./layout/navbar', { showSmallPageLink: showSmallPageLink }); -%>
 
     <!-- page content -->
     <%- include(content) %>

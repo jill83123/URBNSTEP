@@ -29,6 +29,10 @@ $spacing-types: (
     padding-top,
     padding-bottom,
   ),
+
+  gap: gap,
+  row-gap: row-gap,
+  column-gap: column-gap,
 );
 
 @mixin generate-spacing($prefix: '') {
@@ -45,6 +49,11 @@ $spacing-types: (
       }
     }
   }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @include generate-spacing();

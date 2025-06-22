@@ -1,5 +1,17 @@
+.text-white {
+  color: $white;
+}
+
+.text-neutral-500 {
+  color: $neutral-500;
+}
+
 .text-neutral-600 {
   color: $neutral-600;
+}
+
+.text-primary-300 {
+  color: $primary-300;
 }
 
 .text-primary-400 {
@@ -14,6 +26,10 @@
   &:hover {
     color: $neutral-600;
   }
+}
+
+.bg-primary-100 {
+  background-color: $primary-100;
 }
 
 .bg-primary-200 {

@@ -1,22 +1,37 @@
-<nav class="container d-flex justify-between items-center py-4 xs:py-3">
-  <div class="d-flex items-center gap-9">
-    <a href="index.html">
-      <img src="../assets/images/logo.svg" alt="logo" />
-    </a>
+<nav class="d-flex flex-col">
+  <div class="container w-100 d-flex justify-between items-center py-4 xs:py-3">
+    <div class="d-flex items-center gap-9">
+      <a href="index.html">
+        <img src="../assets/images/logo.svg" alt="logo" />
+      </a>
 
-    <ul class="d-flex items-center gap-4 fw-medium xs:d-none">
-      <li>
-        <a href="products.html" class="p-3 hover:text-neutral-600">商品列表</a>
-      </li>
-      <li>
-        <a href="story.html" class="p-3 hover:text-neutral-600">品牌故事</a>
-      </li>
-    </ul>
+      <ul class="d-flex items-center gap-4 fw-medium xs:d-none">
+        <li>
+          <a href="products.html" class="p-3 hover:text-neutral-600">商品列表</a>
+        </li>
+        <li>
+          <a href="story.html" class="p-3 hover:text-neutral-600">品牌故事</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <a href="login.html" class="p-3">
+        <i class="bi bi-person fs-6"></i>
+      </a>
+    </div>
   </div>
 
-  <div>
-    <a href="login.html" class="p-3">
-      <i class="bi bi-person fs-6"></i>
-    </a>
-  </div>
+  <% if (showSmallPageLink) { %>
+    <div class="d-none xs:d-block">
+      <ul class="d-flex items-center fw-medium text-center">
+        <li class="flex-grow-1 bg-primary-200">
+          <a href="products.html" class="w-100 p-3">商品列表</a>
+        </li>
+        <li class="flex-grow-1 bg-primary-100">
+          <a href="story.html" class="w-100 p-3">品牌故事</a>
+        </li>
+      </ul>
+    </div>
+  <% } %>
 </nav>

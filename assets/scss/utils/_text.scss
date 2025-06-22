@@ -6,6 +6,8 @@ $font-sizes: (
   7: 28px,
   8: 32px,
   10: 40px,
+  12: 48px,
+  16: 64px,
 );
 
 @each $key, $size in $font-sizes {

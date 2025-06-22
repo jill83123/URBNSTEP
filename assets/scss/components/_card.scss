@@ -25,3 +25,15 @@
     color: inherit;
   }
 }
+
+@include mobile() {
+  .xs\:card-sm {
+    .card-img {
+      margin-bottom: 8px;
+    }
+
+    .title {
+      margin-bottom: 0px;
+    }
+  }
+}

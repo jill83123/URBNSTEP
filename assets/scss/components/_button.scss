@@ -4,13 +4,15 @@
   align-items: center;
   gap: 8px;
 
+  width: fit-content;
   padding: 12px 24px;
-  border-radius: $radius-xs;
-  transition: color 0.3s ease, background-color 0.3s ease;
-
+  font-weight: $weight-medium;
   color: var(--btn-color);
   background-color: var(--btn-bg);
   border: 1px solid var(--btn-border-color);
+  border-radius: $radius-xs;
+
+  transition: color 0.3s ease, background-color 0.3s ease;
 
   &:hover,
   &:focus {
@@ -36,6 +38,16 @@
   --btn-hover-color: #{$white};
   --btn-hover-bg: #{$neutral-700};
   --btn-hover-border-color: #{$neutral-700};
+}
+
+.btn-primary-300 {
+  --btn-color: #{$neutral-900};
+  --btn-bg: #{$primary-300};
+  --btn-border-color: #{$primary-300};
+
+  --btn-hover-color: #{$primary-500};
+  --btn-hover-bg: #{$primary-300};
+  --btn-hover-border-color: #{$primary-300};
 }
 
 .btn-outline-neural-900 {
