@@ -36,14 +36,3 @@
     opacity: 0.4;
   }
 }
-
-.stretched-link {
-  display: inline;
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-  }
-}

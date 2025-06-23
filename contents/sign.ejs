@@ -27,20 +27,23 @@
 
         <!-- options -->
         <ul class="d-flex flex-col gap-2">
-          <li class="options-item d-flex items-center gap-3 p-4">
-            <img src="../assets/images/login/facebook.svg" alt="facebook icon" />
-            <p>Facebook <%= state === 'login' ? '登入' : '註冊' %></p>
-            <a href="javascript:;" class="stretched-link"></a>
+          <li class="options-item">
+            <a href="javascript:;" class="d-flex items-center gap-3 p-4">
+              <img src="../assets/images/login/facebook.svg" alt="facebook icon" />
+              <p>Facebook <%= state === 'login' ? '登入' : '註冊' %></p>
+            </a>
           </li>
-          <li class="options-item d-flex items-center gap-3 p-4">
-            <img src="../assets/images/login/apple.svg" alt="apple icon" />
-            <p>Apple <%= state === 'login' ? '登入' : '註冊' %></p>
-            <a href="javascript:;" class="stretched-link"></a>
+          <li class="options-item">
+            <a href="javascript:;" class="d-flex items-center gap-3 p-4">
+              <img src="../assets/images/login/apple.svg" alt="apple icon" />
+              <p>Apple <%= state === 'login' ? '登入' : '註冊' %></p>
+            </a>
           </li>
-          <li class="options-item d-flex items-center gap-3 p-4">
-            <img src="../assets/images/login/google.svg" alt="google icon" />
-            <p>Google <%= state === 'login' ? '登入' : '註冊' %></p>
-            <a href="javascript:;" class="stretched-link"></a>
+          <li class="options-item">
+            <a href="javascript:;" class="d-flex items-center gap-3 p-4">
+              <img src="../assets/images/login/google.svg" alt="google icon" />
+              <p>Google <%= state === 'login' ? '登入' : '註冊' %></p>
+            </a>
           </li>
         </ul>
       </div>

@@ -173,7 +173,7 @@
       max-width: calc((100% - 12px) / 2);
     }
 
-    &::before {
+    a::before {
       content: '';
       position: absolute;
       inset: 0;

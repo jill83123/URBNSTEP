@@ -66,5 +66,9 @@
     &:hover {
       background-color: $neutral-100;
     }
+
+    a:hover {
+      color: inherit;
+    }
   }
 }
