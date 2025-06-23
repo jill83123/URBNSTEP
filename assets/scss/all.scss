@@ -5,7 +5,6 @@
 
 @import 'utils/variables';
 @import 'utils/mixins';
-@import 'utils/helpers';
 
 @import 'base/reset';
 @import 'base/base';
@@ -15,9 +14,13 @@
 @import 'components/pagination';
 @import 'components/button';
 
+@import 'utils/helpers';
+
 @import 'layout/footer';
 
 @import 'pages/index';
 @import 'pages/products';
 @import 'pages/product';
+@import 'pages/collection';
 @import 'pages/story';
+@import 'pages/sign';

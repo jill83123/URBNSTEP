@@ -1,0 +1,49 @@
+<main class="sign-main container py-16 md:py-0">
+  <div class="d-flex gap-6 md:flex-col md:gap-0">
+    <picture class="sign-img-wrap">
+      <source media="(max-width: 991px)" srcset="../assets/images/login/login-sm.png" />
+      <img src="../assets/images/login/login.png" alt="URBNSTEP 機能鞋" />
+    </picture>
+
+    <section class="flex-grow-1 d-flex items-center position-relative">
+      <img src="../assets/images/login/login-bg.png" class="bg-img md:d-none" />
+
+      <div class="w-100 px-20 md:my-8 xs:px-0">
+        <h1 class="title fs-7 text-center mb-8 xs:fs-6 xs:mb-6">歡迎！</h1>
+
+        <!-- tablist -->
+        <ul class="d-flex mb-8 xs:mb-6">
+          <li class="w-100">
+            <a href="login.html" class="switch-btn title <%= state === 'login' ? 'active' : '' %>"
+              >登入</a
+            >
+          </li>
+          <li class="w-100">
+            <a href="signup.html" class="switch-btn title <%= state !== 'login' ? 'active' : '' %>"
+              >註冊</a
+            >
+          </li>
+        </ul>
+
+        <!-- options -->
+        <ul class="d-flex flex-col gap-2">
+          <li class="options-item d-flex items-center gap-3 p-4">
+            <img src="../assets/images/login/facebook.svg" alt="facebook icon" />
+            <p>Facebook <%= state === 'login' ? '登入' : '註冊' %></p>
+            <a href="javascript:;" class="stretched-link"></a>
+          </li>
+          <li class="options-item d-flex items-center gap-3 p-4">
+            <img src="../assets/images/login/apple.svg" alt="apple icon" />
+            <p>Apple <%= state === 'login' ? '登入' : '註冊' %></p>
+            <a href="javascript:;" class="stretched-link"></a>
+          </li>
+          <li class="options-item d-flex items-center gap-3 p-4">
+            <img src="../assets/images/login/google.svg" alt="google icon" />
+            <p>Google <%= state === 'login' ? '登入' : '註冊' %></p>
+            <a href="javascript:;" class="stretched-link"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>
